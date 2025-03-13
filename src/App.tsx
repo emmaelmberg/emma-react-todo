@@ -39,7 +39,7 @@ function App() {
         <div className="section-container">
           {
             tasks.map((task) => (
-              <Task taskProp={task} key={task.id} />
+              <Task taskProp={task} key={task.id} onDelete={getItems} />
             ))
           }
         </div>
